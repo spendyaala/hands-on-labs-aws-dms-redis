@@ -25,3 +25,16 @@ Please understand that doing these hands-on exercises gives you a direct hands-o
 Important Information : Running this Redis Cluster will cost your around $0.88 per hour. These exercises can take up to 4 hours to complete. Hence, please kindly be informed that you may incur $4.00 (USD)  or more , for doing these exercise, from Redis Inc.
 
 Also, please note  you may also additionally incur AWS cloud resource costs. Hence, its important to do the last exercise in this guide to clean up all resources and to save costs.
+
+
+# Hands-on exercises
+
+* Exercise 1:	[Migration Architecture Review and VPC Setup](Labs/lab1/README.md) (30 mins)
+* Exercise 2:	Prepare Source System - MySQL
+* Exercise 3:	AWS DMS - Endpoint Configuration for your source - MySQL
+* Exercise 4:	Prepare Target System - Redis Enterprise Cloud
+* Exercise 5:	AWS DMS - Target Endpoint configuration for Redis Enterprise Cloud
+* Exercise 6:	AWS DMS - Creating Migration Task
+* Exercise 7:	AWS DMS - Running Migration task
+* Exercise 8:	Verifying Migration results
+* Exercise 9:	Cleaning up Cloud Resources
