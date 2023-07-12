@@ -30,11 +30,11 @@ Also, please note  you may also additionally incur AWS cloud resource costs. Hen
 # Hands-on exercises
 
 * Exercise 1:	[Migration Architecture Review and VPC Setup](Labs/lab1/README.md) (30 mins)
-* Exercise 2:	Prepare Source System - MySQL
-* Exercise 3:	AWS DMS - Endpoint Configuration for your source - MySQL
-* Exercise 4:	Prepare Target System - Redis Enterprise Cloud
-* Exercise 5:	AWS DMS - Target Endpoint configuration for Redis Enterprise Cloud
-* Exercise 6:	AWS DMS - Creating Migration Task
-* Exercise 7:	AWS DMS - Running Migration task
-* Exercise 8:	Verifying Migration results
-* Exercise 9:	Cleaning up Cloud Resources
+* Exercise 2:	[Prepare Source System - MySQL](Labs/lab2/README.md) (30 mins)
+* Exercise 3:	[AWS DMS - Endpoint Configuration for your source - MySQL](Labs/lab3/README.md) (30 mins)
+* Exercise 4:	[Prepare Target System - Redis Enterprise Cloud](Labs/lab4/README.md) (30 mins)
+* Exercise 5:	[AWS DMS - Target Endpoint configuration for Redis Enterprise Cloud](Labs/lab5/README.md) (30 mins)
+* Exercise 6:	[AWS DMS - Creating Migration Task](Labs/lab6/README.md) (30 mins)
+* Exercise 7:	[AWS DMS - Running Migration task](Labs/lab7/README.md) (30 mins)
+* Exercise 8:	[Verifying Migration results](Labs/lab8/README.md) (30 mins)
+* Exercise 9:	[Cleaning up Cloud Resources](Labs/lab9/README.md) (30 mins)
