@@ -6,6 +6,8 @@ In this exercise, you will
 * Monitoring CloudWatch logs during migration.
 * Monitoring migration progress
 
+## Hands-on lab exercise steps
+
 1. All that it takes now to run a job is simply to click “Restart/Resume” button.
 And the progress can be seen here (Point#3)
 

@@ -4,6 +4,8 @@
 In this exercise, you will
 * After successfully completing the migration, you will verify the results, to ensure that the data from the source MySQL database has been migrated to Redis Enterprise Cloud on AWS.
 
+## Hands-on lab exercise steps
+
 1. The easiest way to ensure that the data is fully migrated is to check the record count in the source MySQL database and comparing that with the “Full load rows” information found in  migration task table statistics, as shown.
 
 ![](images/lab8-a.png)
