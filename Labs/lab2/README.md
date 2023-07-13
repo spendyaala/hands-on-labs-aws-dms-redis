@@ -10,26 +10,27 @@ In this exercise, you will
 ## MySQL database setup
 1. Go ahead and launch an EC2 instance running  Centos Linux 7.
 An example one here with AMI : `ami-0bc06212a56393ee1`
-lab2-a.png
+
+![](images/lab2-a.png)
 
 2. Choose Network as the VPC created in the previous exercise (Name:  devday-demo-vpc). Choose subnet as “devday-demo-subnet1”.  Also “Enable” Auto-assign Public IP.
 DO NOT hit “Review and Launch” yet. Instead click “Next: Add storage”
-lab2-b.png
+![](images/lab2-b.png)
 
 3. Set the storage to 40GB.Enable Delete on Termination check box.
 DO NOT hit “Review and Launch” yet. Instead click “Next: Add Tags”
-lab2-c.png
+![](images/lab2-c.png)
 
 4. Add Tags in step 5 and hit “Next” . Then you will get to this screen.
 Configure a Security group with SSH from your IP.
 And to the port 3306 from any machine within the VPC (notice the CIDR: 10.0.0.0/16  Its same CIDR as your VPC.
-lab2-d.png
+![](images/lab2-d.png)
 
 5. Finally, choose a secret key pair file. Create a new one or use an existing one. In this case I am using an existing key. This is to securely SSH in to the EC2 Machine.
-lab2-e.png
+![](images/lab2-e.png)
 
 6. Once the instance is launched, you can access it by clicking on View Instances.
-lab2-f.png
+![](images/lab2-f.png)
 
 7. Here you can observe that the instance has been successfully launched and has a –
 * Public IP address
@@ -40,7 +41,7 @@ In essence, this EC2 instance is running in the intended VPC you created in the 
 
 We will use this EC2 instance as VM that runs MySQL server in a docker container.  This MySQL database server will be used as a source database system.
 
-lab2-g.png
+![](images/lab2-g.png)
 
 8. Let’s connect to this EC2 machine using SSH command.
 Example:
@@ -61,11 +62,11 @@ sudo docker pull mysql
 docker images
 ```
 Here is how the output may look like:
-lab2-h.png
+![](images/lab2-h.png)
 
 9. Now the docker image is downloaded on to the EC2 machine. It's time to run MySQL in the docker container using docker run command as shown.
 
-lab2-i.png
+![](images/lab2-i.png)
 
 * Docker ps command ascertains that the container is running.
 * Then using docker exec command open an interactive terminal into the container and run mysql command
@@ -88,7 +89,7 @@ root@<docker_container_id>:/# mysql –uroot -p
 It is in this “tpcds” database schema that you going to create all the tables and load data into.
 Exit from this container by typing exit multiple times, until you get back to the centos user SSH session on the EC2 machine.
 
-lab2-j.png
+![](images/lab2-j.png)
 
 11. Now we are going to download the demo data to the EC2 instance so that we can load the data into MySQL database.
 In order to do that, you need a few utilities to be installed.
@@ -100,13 +101,13 @@ sudo yum install wget -y
 wget https://aws-devday-resources.s3.us-west-2.amazonaws.com/awsdevday-dms-demo-data.zip
 sudo yum install unzip -y
 ```
-lab2-k.png
+![](images/lab2-k.png)
 
 12. After downloading the `awsdevday-dms-demo-data.zip` file, unzip the contents using “unzip” command.
 That creates a “tmp” directory.
 Change directory using “cd tmp” command and list the contents using the “ls—lrt” command.
 
-lab2-l.png
+![](images/lab2-l.png)
 
 13. Now get the Container ID for the MySQL container.
 ```
@@ -131,7 +132,7 @@ And list the contents of tmp directory to ensure that all the files got copied o
 ls -lrt
 ```
 
-lab2-m.png
+![](images/lab2-m.png)
 
 14. Now run the mysql command to load the database schema that has all the relevant tables in to `tpcds` database.  Notice, you are doing this within the container and from the `/tmp` folder. Enter the password for all of these MySQL commands as “Redis00$”
 
@@ -151,7 +152,7 @@ mysql> show tables;
 
 And that should enlist all of the database table created in the `tpcds` schema. Remember we loaded all of these tables from the `tpcds.sql` file.
 
-lab2-n.png
+![](images/lab2-n.png)
 
 15. Its time to start loading the data.
 You are doing this from the tmp folder within the MySQL container.
@@ -177,7 +178,7 @@ Example:
 mysql -uroot -p --local-infile -Dtpcds -e "load data local infile 'catalog_page_1k.dat' replace into table catalog_page character set latin1 fields terminated by '|'"
 ```
 
-lab2-o.png
+![](images/lab2-o.png)
 
 16. Now you can start loading all of the data from the data files within the tmp folder.
 
@@ -195,11 +196,11 @@ mysql -uroot -p --local-infile -Dtpcds -e "load data local infile 'web_sales.dat
 
 ```
 
-lab2-p.png
+![](images/lab2-p.png)
 
 17. Once you load the data successfully, you can run the select count(*) my sql commands to ensure that the total count of records match these numbers.
 
-lab2-q.png
+![](images/lab2-q.png)
 
 
 ## Summary
