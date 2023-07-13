@@ -38,3 +38,15 @@ Also, please note  you may also additionally incur AWS cloud resource costs. Hen
 * Exercise 7:	[AWS DMS - Running Migration task](Labs/lab7/README.md) (30 mins)
 * Exercise 8:	[Verifying Migration results](Labs/lab8/README.md) (30 mins)
 * Exercise 9:	[Cleaning up Cloud Resources](Labs/lab9/README.md) (30 mins)
+
+# Additional resources
+## Redis Enterprise Cloud resources
+* Start building your Apps today for FREE at [redis.com/try-free](https://redis.com/try-free)
+* Redis Enterprise Cloud on [AWS Marketplace](https://aws.amazon.com/marketplace/pp/prodview-mwscixe4ujhkq)
+* Checkout our Developer Hub at `developer.redis.com`
+* Want to connect? Email Redis at `aws@redis.com`
+
+## AWS resources
+* [Getting started guide](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_GettingStarted.html): Review technical migration documentation
+* [Database Migration Services (DMS) Homepage](https://aws.amazon.com/dms/): Highlights DMS features and benefits
+* [Migration Pricing](https://aws.amazon.com/dms/pricing): Prices for replication instances, storage, and data transfer
