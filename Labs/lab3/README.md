@@ -29,7 +29,7 @@ Choose a Name, Description, Instance Class and storage, as shown.
 * Select AZ as us-west-2a
 * Leave “default” for VPC Security Group
 
-![](images/lab3-b.png)
+![](images/lab3-c.png)
 
 4. Launching Replication instances:
 * Go ahead and launch the DMS Replication instance.
@@ -47,7 +47,6 @@ Choose a Name, Description, Instance Class and storage, as shown.
 * Port is 3306
 * User: Root
 * Password: Redis00$
-
 ![](images/lab3-e.png)
 
 5. Testing connectivity:
