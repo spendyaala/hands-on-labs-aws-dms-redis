@@ -7,6 +7,11 @@ In this exercise, you will
 * Run MySQL database as a docker container.
 * Load TPCDS data into MySQL database.
 
+## Premise
+In this exercise, you are going to configure and prepare your source system.  Your source system is going to be an operational database or a transactional database. For all purposes, we are going to use MySQL as your source system.  
+
+As a part of this exercise, you are going to create an EC2 machine and install MySQL on it. Then you will load industry standard TPCDS datasets in to you MySQL database. 
+
 ## MySQL database setup
 1. Go ahead and launch an EC2 instance running  Centos Linux 7.
 An example one here with AMI : `ami-0bc06212a56393ee1`

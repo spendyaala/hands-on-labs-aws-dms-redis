@@ -7,6 +7,9 @@ In this exercise, you will
 * Provision a database.
 * Establish VPC Peering between Redis VPC and your AWS DMS VPC.
 
+## Premise
+As a part of overall migration of your data from MySQL to the target Redis database system, you will need to prepare the target Redis database system too. And precisely, that is what you are going to accomplish in this exercise. You will create a Redis account and create a new Redis Enterprise Cloud subscription in AWS, you will design and provision a database and finally establish a secured VPC peering connection between your target Redis VPC and your AWS DMS VPC.
+
 ## Hands-on exercise steps
 
 1. Sign Up for an account at app.redislabs.com :

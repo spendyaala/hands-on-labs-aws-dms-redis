@@ -2,7 +2,7 @@
 
 ## Objectives
 In this exercise, you will
-* Clean up the cloud resources to save money and resources.
+* Clean up the cloud resources to save money and resources, after you are done with all of the previous exercises.
 
 ## Hands-on lab exercise steps
 

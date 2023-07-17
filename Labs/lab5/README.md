@@ -6,6 +6,9 @@ In this exercise, you will
 * Create an AWS DMS endpoint that points to Redis Enterprise Cloud database
 * Test endpoint Connection
 
+#Premise
+AWS DMS requires connectivity to your target database system, in this case - Redis Enterprise Cloud. In this exercise, you will create an endpoint for your Redis database and test the connectivity between DMS service and your Redis database endpoints.
+
 ## Hands-on lab exercise steps
 
 1. Now its time to go ahead and create the DMS Endpoint that points to Redis Enterprise Cloud on AWS, which is going to the target database system that we want to migrate data into.

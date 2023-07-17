@@ -6,6 +6,9 @@ In this exercise, you will
 * Enable Cloudwatch logs for your migration tasks.
 * Configure Table Mapping Rules for selective data migration.
 
+## Premise
+At the end of the day, you are migrating data from your target MySQL database to Redis Enterprise Cloud on AWS. The actual task of migrating the data is done by an AWS DMS migration task. You are going to configure that task, in this lab.
+
 ## Hands-on lab exercise steps
 
 1. Now its time to define your migration task to actually do a database migration.

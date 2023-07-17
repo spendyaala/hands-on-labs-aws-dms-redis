@@ -7,6 +7,10 @@ In this exercise, you will
 * Create an AWS DMS endpoint that points to MySQL database server
 * Test endpoint Connection
 
+## Premise
+In order to migrate your database from your transactional system to Redis, you would need AWS DMS( Data Migration Service). In this exercise, you are going to create an AWS DMS ( Data Migration Service) Replication instance and establish a connection from DMS service to your source system MySQL database. To do this, you need to define an endpoint for your source system and test the connectivity between your DMS instance and the MySql database server endpoint.
+
+
 ## Creating AWS DMS Replication instance
 1. Its time to login into your AWS Web Console.
 Make sure you choose the right region of your choice. In this case, I chose us-west-2 (Oregon)
